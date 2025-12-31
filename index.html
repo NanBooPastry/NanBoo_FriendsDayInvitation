@@ -1,45 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <div class="viewport">
-      <div id="app" class="canvas">
-
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Invitation</title>
-        <link rel="stylesheet" href="style.css" />
-        </head>
-        <body>
-
-        <!-- 封面 -->
+    <div id="app">
         <div id="cover" class="page">
             <img src="asset/logo.png" class="logo" />
             <p class="subtitle">You are invited.</p>
             <button id="openBtn">打開邀請卡</button>
         </div>
 
-        <!-- 邀請內容 -->
         <div id="invitation" class="page hidden">
-
-            <!-- 透明 WebM 影片 -->
-            <video class="alpha-video" autoplay loop muted playsinline>
-                <source src="asset/P1.mp4" type="video/webm">
+            <video id="mainVideo" class="alpha-video" muted playsinline>
+                <source src="asset/P1.mp4" type="video/mp4">
+                您的瀏覽器不支援影片播放。
             </video>
-  
+            
+            <div class="content-text">
+                <h1>Grand Opening</h1>
+                <p class="store">南部人 Nan Boo</p>
+                <p class="info">1/9 13:00 - 18:00<br/>台北市...</p>
+            </div>
         </div>
-
-        <script src="script.js"></script>
-        </body>
-        </html>
-
-          <div id="invitation" class="page hidden">
-            <h1>Grand Opening</h1>
-            <p class="store">STORE NAME</p>
-            <p class="info">DATE · TIME<br/>ADDRESS</p>
-          </div>
-    
-        </div>
-      </div>
-    </body>
-    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
